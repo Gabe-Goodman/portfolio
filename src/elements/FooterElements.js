@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
-export const FooterWrapper = styled.footer 
-    /*css*/`
+export const FooterWrapper = styled.footer`
         grid-column: 2 / span 12;
         min-height: 11.25rem;
         padding: 3rem 0;
@@ -14,8 +13,7 @@ export const FooterWrapper = styled.footer
         }
     `
 
-export const FooterSocialWrapper = styled.div
-    /*css*/`
+export const FooterSocialWrapper = styled.div`
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -27,8 +25,7 @@ export const FooterSocialWrapper = styled.div
         }
     `
 
-export const FooterSocialIcons = styled.div
-    /*css*/`
+export const FooterSocialIcons = styled.div`
         flex: 0 0 100%;
         margin-bottom: 2rem;
 
