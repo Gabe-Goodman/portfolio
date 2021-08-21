@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "sc33n3",
+    title: "Gabe Goodman",
+    description: "Welcome to my professional portfolio.",
+    url: "",
+    image: "/image.jpg",
+    author: "Gabe Goodman",
   },
   plugins: [
       `gatsby-plugin-image`,
