@@ -25,10 +25,10 @@ const allPosts = ({pageContext, data}) => {
             <FeatureImage />
             <Content>
                 <H1 textAlign="center" margin="0 0 1rem 0">
-                    My first project
+                    Gabe Goodman
                 </H1>
                 <P color="dark2" textAlign="center">
-                    THIS IS THE PARAGRAPH ELEMENT
+                    Professional Portfolio
                 </P>
                 {posts.map(post => (
                     <ContentCard
