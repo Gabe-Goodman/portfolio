@@ -1,5 +1,7 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import { Container, Content, FeatureImage } from "../components"
+import { H1 } from "../elements"
 
 // styles
 const pageStyles = {
