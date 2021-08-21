@@ -17,7 +17,7 @@ export const FooterSocialWrapper = styled.div`
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        text align: center;
+        text-align: center;
 
         & p {
             text-align: center;
