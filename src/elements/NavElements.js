@@ -8,7 +8,7 @@ export const NavWrapper = styled.nav`
 
     & img {
         /* height for icon */
-        height: 30px;
+        height: 60px;
     }
 
         @media ${props => props.theme.breakpoints.tablet} {
