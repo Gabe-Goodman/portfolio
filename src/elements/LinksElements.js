@@ -6,6 +6,7 @@ export const AboutWrapper = styled.nav`
     display: flex;
     align-items: center;
     z-index: 10;
+    color: inherit;
 
     & img {
         /* height for icon */
@@ -18,11 +19,15 @@ export const AboutWrapper = styled.nav`
 `
 
 export const ContactWrapper = styled.nav`
-grid-column: 13 / span 1;
-grid-row: 1 / 2;
-display: flex;
-align-items: center;
-z-index: 10;
+    grid-column: 13 / span 1;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+
+    a {
+        color: inherit;
+    }
 
     & img {
         /* height for icon */

@@ -5,7 +5,11 @@ import { AboutWrapper, ContactWrapper } from "../elements"
 export const AboutMe = () => {
     return (
         <AboutWrapper>
-            <Link to ="/about">
+            <Link to ="/about" style={{ textDecoration: 'none' }}
+            // activeStyle={{ 
+            //     fontWeight: 900
+            //  }}
+            >
                 About
             </Link>
         </AboutWrapper>
@@ -15,9 +19,9 @@ export const AboutMe = () => {
 export const Contact = () => {
     return (
         <ContactWrapper>
-            <Link href = "mailto:goodman.g@northeastern.edu">
+            <a href="mailto:goodman.g@northeastern.edu" style={{ textDecoration: 'none' }}>
                 Contact
-            </Link>
+            </a>
         </ContactWrapper>
     )
 }

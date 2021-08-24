@@ -41,6 +41,10 @@ export const Seo = ({description, keywords, title, image, url, author}) => {
                                 property: `og:url`,
                                 content: metaUrl,
                             },
+                            {
+                                property: `og:author`,
+                                content: metaAuthor,
+                            }
                         ].concat(
                             metaKeywords && metaKeywords.length > 0 ? {
                                 name: `keywords`,

@@ -1,9 +1,9 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { Container, Content, FeatureImage } from "../components"
 import { H1 } from "../elements"
 
-export const notFound = ({data}) => {
+const notFound = ({data}) => {
   const featureImage = data.imageSharp.fixed
 
   return (
