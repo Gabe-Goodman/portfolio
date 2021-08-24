@@ -5,6 +5,7 @@ export const NavWrapper = styled.nav`
     grid-row: 1 / 2;
     display: flex;
     align-items: center;
+    z-index: 11;
 
     & img {
         /* height for icon */
@@ -13,5 +14,7 @@ export const NavWrapper = styled.nav`
 
         @media ${props => props.theme.breakpoints.tablet} {
             grid-column: 2 / span 6;
+            margin-top: 100px;
+            position: fixed;
         }
     `

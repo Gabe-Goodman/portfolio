@@ -8,6 +8,7 @@ export const PostWrapper = styled.main`
             `${props.theme.spacings.xLarge} ${props.theme.spacings.xxLarge}`};
         box-shadow: ${props => props.theme.shadows.shadow1};
         z-index: 10;
+        
 
     h1,
     h2,
@@ -44,7 +45,7 @@ export const PostWrapper = styled.main`
     }
 
     p {
-        font-s ize: 1.125rem;
+        font-size: 1.125rem;
         line-height: 1.875rem;
         font-weight: 400;
         color: ${props => props.theme.colors.dark2};

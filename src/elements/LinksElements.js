@@ -18,6 +18,7 @@ export const AboutWrapper = styled.nav`
 
         @media ${props => props.theme.breakpoints.tablet} {
             grid-column: 6 / span 1;
+            margin-top: 100px;
         }
 `
 
@@ -39,5 +40,6 @@ export const ContactWrapper = styled.nav`
 
     @media ${props => props.theme.breakpoints.tablet} {
                 grid-column: 7 / span 1;
+                margin-top: 100px;
     }
 `
