@@ -6,9 +6,9 @@ export const AboutMe = () => {
     return (
         <AboutWrapper>
             <Link to ="/about" style={{ textDecoration: 'none' }}
-            // activeStyle={{ 
-            //     fontWeight: 900
-            //  }}
+            activeStyle={{ 
+                fontWeight: 800
+             }}
             >
                 About
             </Link>
