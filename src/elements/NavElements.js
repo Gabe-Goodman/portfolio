@@ -9,12 +9,12 @@ export const NavWrapper = styled.nav`
 
     & img {
         /* height for icon */
-        height: 60px;
+        height: 65px;
     }
 
         @media ${props => props.theme.breakpoints.tablet} {
             grid-column: 2 / span 6;
-            margin-top: 125px;
+            margin-top: 123px;
             margin-left: 2px;
             position: fixed;
         }
