@@ -15,7 +15,7 @@ export const AboutMe = () => {
 export const Contact = () => {
     return (
         <ContactWrapper>
-            <Link to ="/">
+            <Link href = "mailto:goodman.g@northeastern.edu">
                 Contact
             </Link>
         </ContactWrapper>
