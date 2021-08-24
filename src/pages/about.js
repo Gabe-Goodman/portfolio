@@ -3,12 +3,12 @@ import { Link, graphql } from "gatsby"
 import { Container, Content, FeatureImage } from "../components"
 import { H1 } from "../elements"
 
-export const notFound = ({data}) => {
-  const featureImage = data.imageSharp.fixed
+export const about = ({data}) => {
+  const aboutImage = data.imageSharp.fixed
 
   return (
     <Container>
-      <FeatureImage fixed={featureImage} />
+      <FeatureImage fixed={aboutImage} />
       <Content>
         <H1 textAlign="center" margin="0 0 1rem 0">
           {" "}
@@ -20,10 +20,10 @@ export const notFound = ({data}) => {
   )
 }
 
-export default notFound
+export default about
 
-export const notFoundQuery = graphql`
-  query NotFoundQuery {
+export const aboutQuery = graphql`
+  query aboutQuery {
     imageSharp(fixed: {originalName: { eq: "404.jpg" } }) {
       fixed (width:1920) {
         ...GatsbyImageSharpFixed
