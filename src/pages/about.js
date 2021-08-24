@@ -24,7 +24,7 @@ export default about
 
 export const aboutQuery = graphql`
   query aboutQuery {
-    imageSharp(fixed: {originalName: { eq: "404.jpg" } }) {
+    imageSharp(fixed: {originalName: { eq: "about.jpg" } }) {
       fixed (width:1920) {
         ...GatsbyImageSharpFixed
       }

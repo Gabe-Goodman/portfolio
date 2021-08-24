@@ -6,7 +6,10 @@ export const AboutWrapper = styled.nav`
     display: flex;
     align-items: center;
     z-index: 10;
-    color: inherit;
+    
+    a {
+        color: inherit;
+    }
 
     & img {
         /* height for icon */
