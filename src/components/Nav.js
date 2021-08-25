@@ -7,7 +7,7 @@ export const Nav = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            logo: file(relativePath: { eq: "door_logo.png" }) {
+            logo: file(relativePath: { eq: "logo.png" }) {
                 publicURL
             }
         }

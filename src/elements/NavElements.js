@@ -14,8 +14,8 @@ export const NavWrapper = styled.nav`
 
         @media ${props => props.theme.breakpoints.tablet} {
             grid-column: 2 / span 6;
-            margin-top: 123px;
-            margin-left: 2px;
+            margin-top: 125px;
+            margin-left: 6px;
             position: fixed;
         }
     `
