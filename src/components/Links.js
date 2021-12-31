@@ -1,27 +1,50 @@
-import React from "react"
-import { Link } from "gatsby"
-import { AboutWrapper, ContactWrapper } from "../elements"
+import React from 'react';
+import { Link } from 'gatsby';
+import { AboutWrapper, ResumeWrapper, ContactWrapper } from '../elements';
+import resumeFile from '../images/Goodman_Resume.pdf';
 
 export const AboutMe = () => {
-    return (
-        <AboutWrapper>
-            <Link to ="/about" style={{ textDecoration: 'none' }}
-            activeStyle={{ 
-                fontWeight: 800
-             }}
-            >
-                About
-            </Link>
-        </AboutWrapper>
-    )
-}
+  return (
+    <AboutWrapper>
+      <Link
+        to="/about"
+        style={{ textDecoration: 'none' }}
+        activeStyle={{
+          fontWeight: 800,
+        }}
+      >
+        About
+      </Link>
+    </AboutWrapper>
+  );
+};
+
+export const Resume = () => {
+  return (
+    <ResumeWrapper>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href={resumeFile}
+        style={{ textDecoration: 'none' }}
+      >
+        Resume
+      </a>
+    </ResumeWrapper>
+  );
+};
 
 export const Contact = () => {
-    return (
-        <ContactWrapper>
-            <a href="mailto:goodman.g@northeastern.edu" style={{ textDecoration: 'none' }}>
-                Contact
-            </a>
-        </ContactWrapper>
-    )
-}
+  return (
+    <ContactWrapper>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="mailto:goodman.g@northeastern.edu"
+        style={{ textDecoration: 'none' }}
+      >
+        Contact
+      </a>
+    </ContactWrapper>
+  );
+};

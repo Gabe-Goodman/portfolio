@@ -1,45 +1,67 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const AboutWrapper = styled.nav`
-    grid-column: 12 / span 1;
-    grid-row: 1 / 2;
-    display: flex;
-    align-items: center;
-    z-index: 10;
-    
-    a {
-        color: inherit;
-    }
+  grid-column: 11 / span 1;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  z-index: 100;
 
-    & img {
-        /* height for icon */
-        height: 30px;
-    }
+  a {
+    color: inherit;
+  }
 
-        @media ${props => props.theme.breakpoints.tablet} {
-            grid-column: 6 / span 1;
-            margin-top: 100px;
-        }
-`
+  & img {
+    /* height for icon */
+    height: 30px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.tablet} {
+    grid-column: 5 / span 1;
+    margin-top: 100px;
+  }
+`;
+
+export const ResumeWrapper = styled.nav`
+  grid-column: 12 / span 1;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+
+  a {
+    color: inherit;
+  }
+
+  & img {
+    /* height for icon */
+    height: 30px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.tablet} {
+    grid-column: 6 / span 1;
+    margin-top: 100px;
+  }
+`;
 
 export const ContactWrapper = styled.nav`
-    grid-column: 13 / span 1;
-    grid-row: 1 / 2;
-    display: flex;
-    align-items: center;
-    z-index: 10;
+  grid-column: 13 / span 1;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  z-index: 100;
 
-    a {
-        color: inherit;
-    }
+  a {
+    color: inherit;
+  }
 
-    & img {
-        /* height for icon */
-        height: 30px;
-    }
+  & img {
+    /* height for icon */
+    height: 30px;
+  }
 
-    @media ${props => props.theme.breakpoints.tablet} {
-                grid-column: 7 / span 1;
-                margin-top: 100px;
-    }
-`
+  @media ${(props) => props.theme.breakpoints.tablet} {
+    grid-column: 7 / span 1;
+    margin-top: 100px;
+  }
+`;
