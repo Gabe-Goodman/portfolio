@@ -14,7 +14,10 @@ const allPosts = ({ pageContext, data }) => {
 
   return (
     <Container>
-      <Seo title={'Gabe Goodman'} description={'Welcome to my professional portfolio.'} />
+      <Seo
+        title={'Gabe Goodman - Portfolio'}
+        description={'Welcome to my professional portfolio.'}
+      />
       <FeatureImage />
       <Content>
         <H1 textAlign="center" margin="0 0 1rem 0">
