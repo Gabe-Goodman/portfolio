@@ -10,11 +10,23 @@ excerpt: React Native, React Navigation, Nativebase
 My role as frontend engineer familiarized me with the advantages and disadvantages of React Native and its *accompanying frameworks and libraries*. Using Android Emulator, we prioritized development for launch via the Google Play Console.
 
 In addition to gaining insight into state management in the context of a mobile application, making use of React's *useContext* API, specific libraries such as *react-google-maps* (location maps) and *MongoDB Realm* (user authentication) were also implemented.<br/>
-&nbsp;
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR4dwQ64s_41wxufSofEDd6yeuaE5tsFBpXPAFi2kKhtwClJCd2byiBT5OtlyZTi6tGlEnv5ukF5n9o/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## Navigation
 ![App navigation](app_navigation.png)
+&nbsp;
+
+```jsx
+    <Pressable
+      rounded="lg"
+      onPress={() =>
+        navigation.navigate('Location Results', {
+          name,
+          mediaId,
+          description,
+        })
+      }>
+
+```
 
 ## Location Page & Saved Locations
 ![Photo gallery and upload](saved_location.png)
