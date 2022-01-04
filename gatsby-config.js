@@ -41,20 +41,29 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [`.md`, `.mdx`],
+        // a workaround to solve mdx-remark plugin compat issue
+        // https://github.com/gatsbyjs/gatsby/issues/15486
+        plugins: [
+          `gatsby-remark-images`,
+          `gatsby-remark-images-medium-zoom`, // Important!
+        ],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 2400,
+              maxWidth: 590,
+              linkImagesToOriginal: false, // Important!
             },
           },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`, // Important!
+            options: {},
+          },
         ],
+        extensions: [`.md`, `.mdx`],
       },
     },
     {
