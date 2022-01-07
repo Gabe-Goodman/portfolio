@@ -27,12 +27,12 @@ export const Footer = () => {
                     <img
                         src={data.github.publicURL} alt="GitHub" />
                 </a>
-                <a href="https://www.linkedin.com/in/gabe-goodman-7362b5127/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/gabe-goodman/" target="_blank" rel="noopener noreferrer">
                     <img
                         src={data.linkedin.publicURL} alt="Linkedin" />
                 </a>
             </FooterSocialIcons>
-            <P size="xSmall" color="dark3">© 2021 Gabe Goodman. All rights reserved.</P>
+            <P size="xSmall" color="dark3">© 2022 Gabe Goodman. All rights reserved.</P>
         </FooterSocialWrapper>
     </FooterWrapper>
 }
