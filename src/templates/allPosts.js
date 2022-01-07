@@ -36,7 +36,7 @@ const allPosts = ({ pageContext, data }) => {
           />
         ))}
       </Content>
-      <Pagination isFirst={isFirst} isLast={isLast} prevPage={prevPage} nextPage={nextPage} />
+      {/* <Pagination isFirst={isFirst} isLast={isLast} prevPage={prevPage} nextPage={nextPage} /> */}
     </Container>
   );
 };
@@ -51,7 +51,7 @@ export const pageQuery = graphql`
           frontmatter {
             slug
             title
-            date(formatString: "MMM DD, YYYY")
+            date(formatString: "MMMM YYYY")
             excerpt
           }
         }
