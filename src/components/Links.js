@@ -37,14 +37,15 @@ export const Resume = () => {
 export const Contact = () => {
   return (
     <ContactWrapper>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="mailto:goodman.g@northeastern.edu"
+      <Link
+        to="/contact"
         style={{ textDecoration: 'none' }}
+        activeStyle={{
+          fontWeight: 800,
+        }}
       >
         Contact
-      </a>
+      </Link>
     </ContactWrapper>
   );
 };

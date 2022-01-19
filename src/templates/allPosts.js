@@ -1,7 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Container, Content, ContentCard, FeatureImage, Pagination, Seo } from '../components';
-import { H1, P } from '../elements';
+import { H1, H3, P, P3 } from '../elements';
+import technicalSkills from '../images/tech-stack.png';
 
 const allPosts = ({ pageContext, data }) => {
   const { currentPage, numPages } = pageContext;
@@ -24,15 +25,25 @@ const allPosts = ({ pageContext, data }) => {
           Gabe Goodman
         </H1>
         <P color="dark2" textAlign="center">
-          Professional Portfolio
+          Software Engineer
         </P>
+        <br />
+        <img src={technicalSkills} style={{ width: '100%' }} />
+        <br />
+        <br />
+        <P3 color="dark2" textAlign="center" style={{ marginBottom: 24 }}>
+          I’m a full stack software engineer with a background in product development. <br /> I
+          worked to impact people's lives by making medical devices enjoyable. <br /> Now I empower
+          communities through application development!
+        </P3>
         {posts.map((post) => (
           <ContentCard
             key={post.node.frontmatter.slug}
-            date={post.node.frontmatter.date}
+            // date={post.node.frontmatter.date}
             title={post.node.frontmatter.title}
             excerpt={post.node.frontmatter.excerpt}
             slug={post.node.frontmatter.slug}
+            github={post.node.frontmatter.github}
           />
         ))}
       </Content>
@@ -53,6 +64,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM YYYY")
             excerpt
+            github
           }
         }
       }
