@@ -7,7 +7,7 @@ export const Container = ({ children }) => {
   return (
     <ContainerWrapper>
       <Nav />
-      <AboutMe />
+      {/* <AboutMe /> */}
       <Resume />
       <Contact />
       {children}

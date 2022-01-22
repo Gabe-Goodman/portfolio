@@ -29,13 +29,6 @@ const allPosts = ({ pageContext, data }) => {
         </P>
         <br />
         <img src={technicalSkills} style={{ width: '100%' }} />
-        <br />
-        <br />
-        <P3 color="dark2" textAlign="center" style={{ marginBottom: 24 }}>
-          I’m a full stack software engineer with a background in product development. <br /> I
-          worked to impact people's lives by making medical devices enjoyable. <br /> Now I empower
-          communities through application development!
-        </P3>
         {posts.map((post) => (
           <ContentCard
             key={post.node.frontmatter.slug}
