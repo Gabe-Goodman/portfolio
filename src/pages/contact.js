@@ -10,6 +10,7 @@ const Contact = ({ data }) => {
     <Container>
       <FeatureImage fixed={contactImage} />
       <Content>
+        <FeatureImage fixed={contactImage} />
         <H1 textAlign="center" margin="0 0 1rem 0">
           {' '}
           Reach Out:
