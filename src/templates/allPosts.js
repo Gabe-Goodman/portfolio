@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Container, Content, ContentCard, FeatureImage, Pagination, Seo } from '../components';
 import { H1, H3, P, P3 } from '../elements';
-import technicalSkills from '../images/tech-stack.png';
+import proPic from '../images/proPic.png';
 
 const allPosts = ({ pageContext, data }) => {
   const { currentPage, numPages } = pageContext;
@@ -21,6 +21,23 @@ const allPosts = ({ pageContext, data }) => {
       />
       <FeatureImage />
       <Content>
+        <div>
+          <img
+            src={proPic}
+            style={{
+              height: '200px',
+              borderRadius: '50%',
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              marginTop: '-30%',
+              marginBottom: '5%',
+              backgroundColor: '#fff',
+              padding: '6px',
+              zIndex: 1000,
+            }}
+          />
+        </div>
         <H1 textAlign="center" margin="0 0 1rem 0">
           Gabe Goodman
         </H1>
