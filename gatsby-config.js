@@ -10,6 +10,8 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
+    'gatsby-source-instance-name-for-remark',
+    // `gatsby-remark-source-name`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -45,6 +47,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `photography`,
+        path: 'src/images/photography',
       },
     },
     {
