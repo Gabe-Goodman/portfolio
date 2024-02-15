@@ -14,18 +14,6 @@ exports.createPages = async function ({ actions, graphql }) {
     }
   `);
 
-  exports.onCreateNode = ({ node, getNode, actions }) => {
-    const { createNodeField } = actions;
-    if (node.internal.type === 'MarkdownRemark') {
-      const fileNode = getNode(node.parent);
-      createNodeField({
-        node,
-        name: 'sourceName',
-        value: fileNode.sourceInstanceName,
-      });
-    }
-  };
-
   // Create paginated pages for posts
 
   const postPerPage = 3;
@@ -55,4 +43,16 @@ exports.createPages = async function ({ actions, graphql }) {
       context: { id },
     });
   });
+};
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === 'MarkdownRemark') {
+    const fileNode = getNode(node.parent);
+    createNodeField({
+      node,
+      name: 'sourceName',
+      value: fileNode.sourceInstanceName,
+    });
+  }
 };
