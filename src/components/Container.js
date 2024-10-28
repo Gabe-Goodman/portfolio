@@ -8,8 +8,8 @@ export const Container = ({ children }) => {
     <ContainerWrapper>
       <Nav />
       {/* <AboutMe /> */}
-      <Resume />
       <Contact />
+      <Resume />
       {children}
       <Footer />
     </ContainerWrapper>
