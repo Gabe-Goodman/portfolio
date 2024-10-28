@@ -30,7 +30,7 @@ export const Footer = () => {
           </a>
         </FooterSocialIcons> */}
         <P size="xSmall" color="dark3">
-          © 2022 Gabe Goodman. All rights reserved.
+          © 2024 Gabe Goodman. All rights reserved.
         </P>
       </FooterSocialWrapper>
     </FooterWrapper>
