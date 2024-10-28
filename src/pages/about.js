@@ -27,7 +27,7 @@ const about = ({ data }) => {
   );
 };
 
-export default photography;
+export default about;
 
 export const data = graphql`
   query about {
