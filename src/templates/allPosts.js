@@ -33,7 +33,7 @@ const allPosts = ({ pageContext, data }) => {
           Gabe Goodman
         </H1>
         <P color="dark2" textAlign="center">
-          Software Engineer
+          Full Stack Developer
         </P>
         {posts.map((post) => (
           <ContentCard
