@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gabe Goodman - Professional Portfolio`,
-    description: 'Welcome to my professional portfolio.',
+    title: `Gabe Goodman - Portfolio`,
+    description: 'Full Stack Developer',
     url: '',
     image: '/image.jpg',
     author: 'Gabe Goodman',

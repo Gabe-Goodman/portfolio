@@ -22,10 +22,7 @@ const allPosts = ({ pageContext, data }) => {
 
   return (
     <Container>
-      <Seo
-        title={'Gabe Goodman - Portfolio'}
-        description={'Welcome to my professional portfolio.'}
-      />
+      <Seo title={'Gabe Goodman - Portfolio'} description={'Full Stack Developer'} />
       <FeatureImage />
       <Content>
         <ProPic />
